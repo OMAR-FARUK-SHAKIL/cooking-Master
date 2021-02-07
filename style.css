@@ -1,7 +1,6 @@
 .main{
     background-color: rgb(255, 251, 194);
     padding: 20px;
-    /* padding: 40px; */
     height: 100%;
     width: 100%;
 }
@@ -18,8 +17,6 @@
 #search-area{
     text-align: center;
     margin-bottom: 30px;
-    /* width:1.5rem;
-    height: 1.2rem; */
 } 
  
  input[type=text] {
@@ -33,43 +30,40 @@
   }
   
     button {
-    /* float: left; */
     padding: 6px;
     margin-top: 8px;
     margin-left: none;
     margin-right: 16px;
-    background: rgb(225, 141, 141);
+    background: rgb(53, 235, 255);
     font-size: 17px;
     border: none;
     height: 1.3cm;
     width: 3cm;
     text-decoration: none;
-    /* cursor: pointer; */
   }
   
  button:hover {
     background: #ccc;
   }
   .meal{
-    border: 2px solid goldenrod;
+    border: 2px solid rgb(157, 253, 3);
     padding: 20px;
     border-radius: 10px;
     margin: 10px;
-}
-
-.meal-name{
-    /* font-size: 45px; */
-    color: rgb(149, 0, 255);
     background-color: antiquewhite;
 }
-
+.meal-name{
+    color: rgb(149, 0, 255);
+}
+.meal a{
+  text-decoration: none;
+}
 #allMeal{
     display: grid;
     grid-template-columns: repeat(4,2fr);
     grid-gap: 20px;
     text-align: center;
 }
-
 .image-style{
   width: 200px;
   width: 250px;
