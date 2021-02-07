@@ -1,14 +1,25 @@
 .main{
-    background-color: rgb(248, 237, 75);
-    padding-top: 20px;
-    padding-left: 40px;
-    
-    width: 100vw;
+    background-color: rgb(255, 251, 194);
+    padding: 20px;
+    /* padding: 40px; */
+    height: 100%;
+    width: 100%;
+}
+#header{
+  font-size: 50px;
+  color: rgb(0, 255, 200);
+  padding-left: 30px;
+}
+#sub-header{
+  color: rgb(253, 154, 48);
+  font-size: 25px;
+  padding-left: 30px;
 }
 #search-area{
     text-align: center;
-    /* width:500px ;
-    height: 30px;*/
+    margin-bottom: 30px;
+    /* width:1.5rem;
+    height: 1.2rem; */
 } 
  
  input[type=text] {
@@ -17,6 +28,8 @@
     margin-right: none;
     font-size: 17px;
     border: none;
+    height: 1cm;
+    width: 10cm;
   }
   
     button {
@@ -28,43 +41,54 @@
     background: rgb(225, 141, 141);
     font-size: 17px;
     border: none;
+    height: 1.3cm;
+    width: 3cm;
+    text-decoration: none;
     /* cursor: pointer; */
   }
   
  button:hover {
     background: #ccc;
   }
-  
-  /* @media screen and (max-width: 600px) {
-    
-     input[type=text],  button {
-      float: none;
-      display: block;
-      text-align: left;
-      width: 100%;
-      margin: 0;
-      padding: 14px;
-    }
-    input[type=text] {
-      border: 1px solid #ccc;  
-    }
-  } */
-
   .meal{
     border: 2px solid goldenrod;
-    padding: 30px;
+    padding: 20px;
     border-radius: 10px;
     margin: 10px;
 }
 
 .meal-name{
-    font-size: 45px;
+    /* font-size: 45px; */
     color: rgb(149, 0, 255);
+    background-color: antiquewhite;
 }
 
 #allMeal{
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(4,2fr);
     grid-gap: 20px;
     text-align: center;
+}
+
+.image-style{
+  width: 200px;
+  width: 250px;
+}
+#meal-detail-container{
+  display: flex;
+  justify-content: center;
+}
+#meal-details{
+  display: none;
+  padding-top: 30px;
+  left: 50%;
+  width: 500px;
+  height: 600px;
+  margin:20px;
+  background-color: rgb(250, 212, 140);
+   text-align: center;  
+}
+#meal-details img{
+  width: 300px;
+  height: 250px;
 }

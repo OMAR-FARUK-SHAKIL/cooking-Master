@@ -10,12 +10,12 @@
 
 <body>
     <main class="main">
-        <h1>Cooking Master</h1>
-        <p>Order your favourite meal.</p>
+        <h1 id="header">Cooking Master</h1>
+        <h2 id="sub-header">Order your favourite meal.</h2>
 
         <div id="search-area">
-                <input id="searchKey" type="text" placeholder="Search for Meal.." name="srch">
-                <button onclick="searchingMeal()" id="btn" type="submit">Submit</button>
+            <input id="searchKey" type="text" placeholder="Search for Meal.." name="srch">
+            <button onclick="searchingMeal()" id="btn" type="submit">Search</button>
             </form>
         </div>
 
@@ -25,11 +25,16 @@
               <button type="submit">Submit</button>
             </form>
           </div> -->
+        <div id="meal-detail-container">
+            <div id="meal-details">
+
+            </div>
+        </div>
 
         <div id="allMeal">
 
         </div>
-    
+
     </main>
     <script src="cooking-api.js"></script>
 </body>
