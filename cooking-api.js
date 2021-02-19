@@ -18,6 +18,8 @@ const errorHandle = () => {
     return alert('Nothing is matched!! please search again by another keyword.');
 }
 
+
+
 const collectMeal = allMeal => {
     const allMealDiv = document.getElementById('allMeal');
     allMeal.forEach(meal => {
@@ -68,3 +70,11 @@ const renderMeal = mealInfo => {
     `
     document.getElementById('meal-details').style.display = 'block';
 }
+
+
+document.getElementById("searchKey").
+    addEventListener('keyup', function (event) {
+        if (event.key === 'Enter') {
+            document.getElementById("btn").click();
+        }
+    }); 
